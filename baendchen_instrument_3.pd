@@ -1,22 +1,22 @@
-#N canvas 1592 0 1920 995 12;
+#N canvas 0 0 1596 823 12;
 #X obj 608 463 vsl 15 128 0 127 0 0 empty empty empty 0 -8 0 8 -262144
--1 -1 497 1;
+-1 -1 0 1;
 #X obj 631 462 vsl 15 128 0 127 0 0 empty empty empty 0 -8 0 8 -262144
--1 -1 849 1;
+-1 -1 0 1;
 #X obj 649 462 vsl 15 128 0 127 0 0 empty empty empty 0 -8 0 8 -262144
--1 -1 1076 1;
+-1 -1 0 1;
 #X obj 667 462 vsl 15 128 0 127 0 0 empty empty empty 0 -8 0 8 -262144
--1 -1 1145 1;
+-1 -1 0 1;
 #X obj 685 462 vsl 15 128 0 127 0 0 empty empty empty 0 -8 0 8 -262144
--1 -1 1052 1;
+-1 -1 0 1;
 #X obj 703 462 vsl 15 128 0 127 0 0 empty empty empty 0 -8 0 8 -262144
--1 -1 796 1;
+-1 -1 0 1;
 #X obj 581 462 vsl 15 128 0 127 0 0 empty empty empty 0 -8 0 8 -262144
 -1 -1 0 1;
 #X obj 143 255 metro 10;
 #X obj 143 230 loadbang;
 #X obj 721 462 vsl 15 128 0 127 0 0 empty empty empty 0 -8 0 8 -262144
--1 -1 420 1;
+-1 -1 0 1;
 #X obj 739 462 vsl 15 128 0 127 0 0 empty empty empty 0 -8 0 8 -262144
 -1 -1 0 1;
 #X obj 143 282 t b b;
