@@ -1,4 +1,4 @@
-#N canvas 1592 -8 1920 1037 12;
+#N canvas 0 0 1588 817 12;
 #X declare -lib zexy;
 #X declare -path /extra/zexy;
 #X obj -62 329 vsl 15 128 0 127 0 0 empty empty empty 0 -8 0 8 -262144
@@ -24,14 +24,14 @@
 #X floatatom 361 295 6 0 0 0 - - -;
 #X floatatom 788 235 6 0 0 0 - - -;
 #X floatatom 788 294 6 0 0 0 - - -;
-#X obj -204 1293 sample-loader;
-#X obj 55 93 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+#X obj -204 722 sample-loader;
+#X obj 464 94 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
 #X obj 219 723 sample-loader;
 #X obj 646 722 sample-loader;
-#X text 76 94 START;
-#X obj 55 119 s start;
-#X obj -204 1267 r start;
+#X text 485 95 START;
+#X obj 464 120 s start;
+#X obj -204 696 r start;
 #X obj 219 697 r start;
 #X obj 646 696 r start;
 #X obj 988 329 vsl 15 128 0 127 0 0 empty empty empty 0 -8 0 8 -262144
@@ -71,36 +71,36 @@
 -1 -1 0 1;
 #X floatatom 1277 522 5 0 0 0 - - -;
 #X floatatom 1277 649 5 0 0 0 - - -;
-#X obj -65 -27 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X obj -65 3 s set1;
-#X text -44 -29 SET 1;
-#X obj 10 -24 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+#X obj 41 88 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#X obj 78 -25 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+#X obj 41 118 s set1;
+#X text 62 86 SET 1;
+#X obj 116 91 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#X obj 148 -27 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X obj 218 -26 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X text 32 -28 SET 2;
-#X obj 10 6 s set2;
-#X text 99 -28 SET 3;
-#X obj 78 5 s set3;
-#X text 168 -29 SET 4;
-#X obj 147 3 s set4;
-#X text 238 -28 SET 5;
-#X obj 217 4 s set5;
-#X msg -377 902 symbol samples/cello/a/*.wav;
-#X obj -378 872 r set1;
-#X obj -377 933 r set2;
-#X obj -377 996 r set3;
-#X obj -375 1062 r set4;
-#X obj -377 1122 r set5;
-#X msg -377 963 symbol samples/cello2/a/*.wav;
-#X msg -377 1026 symbol samples/ambience/a/*.wav;
-#X msg -377 1088 symbol samples/rythm/a/*.wav;
-#X msg -377 1149 symbol samples/combo/a/*.wav;
+#X obj 184 90 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 254 88 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 324 89 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X text 138 87 SET 2;
+#X obj 116 121 s set2;
+#X text 205 87 SET 3;
+#X obj 184 120 s set3;
+#X text 274 86 SET 4;
+#X obj 253 118 s set4;
+#X text 344 87 SET 5;
+#X obj 323 119 s set5;
+#X msg -377 331 symbol samples/cello/a/*.wav;
+#X obj -378 301 r set1;
+#X obj -377 362 r set2;
+#X obj -377 425 r set3;
+#X obj -375 491 r set4;
+#X obj -377 551 r set5;
+#X msg -377 392 symbol samples/cello2/a/*.wav;
+#X msg -377 455 symbol samples/ambience/a/*.wav;
+#X msg -377 517 symbol samples/rythm/a/*.wav;
+#X msg -377 578 symbol samples/combo/a/*.wav;
 #X obj 106 319 r set1;
 #X obj 107 380 r set2;
 #X obj 107 443 r set3;
@@ -140,7 +140,7 @@
 #X obj 1140 552 + 20;
 #X obj 361 474 springs_Sampler;
 #X obj 788 473 springs_Sampler;
-#X obj -62 1043 springs_Sampler;
+#X obj -62 472 springs_Sampler;
 #X obj 1308 264 expr ($f1 - 0.74) * (-800);
 #X obj 355 -70 outputStage_mco;
 #X obj 749 753 player;
@@ -154,19 +154,21 @@
 #X obj 1171 672 add-synth-rand;
 #X obj 795 843 player;
 #X obj 779 813 player;
-#X obj -55 1414 player;
-#X obj -71 1384 player;
-#X obj -86 1354 player;
-#X obj -101 1324 player;
+#X obj -55 843 player;
+#X obj -71 813 player;
+#X obj -86 783 player;
+#X obj -101 753 player;
 #X obj 368 844 player;
 #X obj 352 814 player;
 #X obj 337 784 player;
 #X obj 322 754 player;
 #X obj 764 783 player;
 #X obj -64 264 expr ($f1 - 0.65) * (-1370);
-#X text -346 -89 String Samper 1 für samplewechsel Statt Lautstärke
+#X text 4 -27 String Samper 1 für samplewechsel Statt Lautstärke
 einen LP Filter nutzen;
+#X connect 0 0 120 0;
 #X connect 0 0 1 0;
+#X connect 1 0 120 1;
 #X connect 2 0 4 0;
 #X connect 2 0 8 0;
 #X connect 3 0 2 0;
@@ -232,15 +234,10 @@ einen LP Filter nutzen;
 #X connect 54 0 113 0;
 #X connect 55 0 131 1;
 #X connect 56 0 57 0;
-#X connect 56 0 22 0;
 #X connect 59 0 64 0;
-#X connect 59 0 22 0;
 #X connect 60 0 66 0;
-#X connect 60 0 22 0;
 #X connect 61 0 68 0;
-#X connect 61 0 22 0;
 #X connect 62 0 70 0;
-#X connect 62 0 22 0;
 #X connect 71 0 17 1;
 #X connect 72 0 71 0;
 #X connect 73 0 77 0;

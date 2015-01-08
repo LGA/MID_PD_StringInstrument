@@ -1,4 +1,4 @@
-#N canvas 2064 476 858 584 12;
+#N canvas 462 127 858 584 12;
 #X obj 485 284 sqrt;
 #X text 53 225 relative frequency;
 #X obj 37 391 *~;
